@@ -1,0 +1,54 @@
+<svg width="128" height="128" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff0040;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#8000ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0080ff;stop-opacity:1" />
+    </linearGradient>
+    
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background with rounded corners -->
+  <rect width="128" height="128" fill="#000000" rx="16"/>
+  
+  <!-- Grain texture -->
+  <rect width="128" height="128" fill="#ffffff" opacity="0.03" rx="16"/>
+  
+  <!-- Angular frame -->
+  <g opacity="0.3">
+    <path d="M 20 20 L 108 20 L 105 23 L 23 23 Z" 
+          stroke="#ff0040" stroke-width="1.5" fill="none"/>
+    <path d="M 108 20 L 108 108 L 105 105 L 105 23 Z" 
+          stroke="#0080ff" stroke-width="1.5" fill="none"/>
+  </g>
+  
+  <!-- Top accent bar -->
+  <path d="M 32 30 L 96 30 L 94 35 L 32 35 Z" fill="#ff0040" opacity="0.9"/>
+  
+  <!-- DFL text in one line -->
+  <text x="64" y="82" font-family="'Bebas Neue', Impact, Arial Black, sans-serif" 
+        font-size="52" fill="#ffffff" text-anchor="middle" 
+        font-weight="900" letter-spacing="4">
+    DFL
+  </text>
+  
+  <!-- Gradient outline -->
+  <text x="64" y="82" font-family="'Bebas Neue', Impact, Arial Black, sans-serif" 
+        font-size="52" fill="none" stroke="url(#grad)" stroke-width="2" 
+        text-anchor="middle" font-weight="900" letter-spacing="4" 
+        filter="url(#glow)"/>
+  
+  <!-- Corner dots -->
+  <circle cx="25" cy="25" r="2" fill="#ff0040" opacity="0.8"/>
+  <circle cx="103" cy="103" r="2" fill="#0080ff" opacity="0.8"/>
+  
+  <!-- Bottom accent -->
+  <line x1="40" y1="110" x2="88" y2="110" stroke="url(#grad)" stroke-width="1.5" opacity="0.6"/>
+</svg>

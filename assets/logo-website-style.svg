@@ -1,0 +1,124 @@
+<svg width="1200" height="400" viewBox="0 0 1200 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="redGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ff0040;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ff0040;stop-opacity:0.6" />
+    </linearGradient>
+    
+    <linearGradient id="mainGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff0040;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#8000ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0080ff;stop-opacity:1" />
+    </linearGradient>
+    
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <!-- Grain texture -->
+    <filter id="grain">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="4" />
+      <feColorMatrix type="saturate" values="0"/>
+      <feBlend in="SourceGraphic" mode="multiply" />
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="400" fill="#000000"/>
+  
+  <!-- Grain texture overlay -->
+  <rect width="1200" height="400" fill="#ffffff" opacity="0.03" filter="url(#grain)"/>
+  
+  <!-- Background geometric shapes -->
+  <g opacity="0.08">
+    <!-- Grid lines -->
+    <line x1="0" y1="100" x2="1200" y2="100" stroke="#ffffff" stroke-width="1"/>
+    <line x1="0" y1="200" x2="1200" y2="200" stroke="#ffffff" stroke-width="1"/>
+    <line x1="0" y1="300" x2="1200" y2="300" stroke="#ffffff" stroke-width="1"/>
+    <line x1="200" y1="0" x2="200" y2="400" stroke="#ffffff" stroke-width="1"/>
+    <line x1="400" y1="0" x2="400" y2="400" stroke="#ffffff" stroke-width="1"/>
+    <line x1="800" y1="0" x2="800" y2="400" stroke="#ffffff" stroke-width="1"/>
+    <line x1="1000" y1="0" x2="1000" y2="400" stroke="#ffffff" stroke-width="1"/>
+  </g>
+  
+  <!-- Left geometric accent - angular shape -->
+  <g opacity="0.6">
+    <path d="M 80 150 L 180 150 L 160 200 L 80 200 Z" 
+          fill="none" stroke="#ff0040" stroke-width="2" filter="url(#glow)"/>
+    <path d="M 80 220 L 180 220 L 160 270 L 80 270 Z" 
+          fill="none" stroke="#8000ff" stroke-width="2" opacity="0.7"/>
+  </g>
+  
+  <!-- Red accent bar (like website badge) -->
+  <path d="M 320 100 L 520 100 L 500 120 L 320 120 Z" 
+        fill="#ff0040" opacity="0.8"/>
+  
+  <!-- Main text: DFL with Bebas Neue style -->
+  <text x="400" y="230" font-family="'Bebas Neue', Impact, Arial Black, sans-serif" 
+        font-size="160" fill="#ffffff" font-weight="900" letter-spacing="20">
+    DFL
+  </text>
+  
+  <!-- DFL text outline effect -->
+  <text x="400" y="230" font-family="'Bebas Neue', Impact, Arial Black, sans-serif" 
+        font-size="160" fill="none" stroke="url(#mainGrad)" stroke-width="3" 
+        font-weight="900" letter-spacing="20" filter="url(#glow)"/>
+  
+  <!-- Subtitle with angular divider -->
+  <g>
+    <!-- Top line -->
+    <line x1="320" y1="260" x2="480" y2="260" stroke="url(#redGrad)" stroke-width="2"/>
+    
+    <text x="400" y="295" font-family="'Oswald', Arial, sans-serif" 
+          font-size="24" fill="#888888" font-weight="300" 
+          letter-spacing="8" text-transform="uppercase">
+      DECISION-FOCUSED
+    </text>
+    
+    <text x="400" y="325" font-family="'Oswald', Arial, sans-serif" 
+          font-size="24" fill="#888888" font-weight="300" 
+          letter-spacing="8" text-transform="uppercase">
+      LEARNING
+    </text>
+    
+    <!-- Bottom angular accent -->
+    <path d="M 320 340 L 360 340 L 355 345 L 320 345 Z" fill="#ff0040"/>
+  </g>
+  
+  <!-- Right side: ICAIF badge style -->
+  <g transform="translate(850, 150)">
+    <!-- Angular badge background -->
+    <path d="M 0 0 L 280 0 L 265 80 L 0 80 Z" 
+          fill="#0a0a0a" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+    
+    <!-- Red accent stripe -->
+    <rect x="0" y="0" width="280" height="4" fill="#ff0040"/>
+    
+    <!-- Text inside badge -->
+    <text x="140" y="35" font-family="'Oswald', Arial, sans-serif" 
+          font-size="16" fill="#888888" font-weight="600" 
+          letter-spacing="4" text-anchor="middle">
+      ICAIF 2025
+    </text>
+    
+    <text x="140" y="60" font-family="'Oswald', Arial, sans-serif" 
+          font-size="13" fill="#666666" font-weight="300" 
+          letter-spacing="3" text-anchor="middle">
+      FINANCIAL OPTIMIZATION
+    </text>
+  </g>
+  
+  <!-- Bottom corner accent -->
+  <g opacity="0.5">
+    <path d="M 50 350 L 120 350 L 115 360 L 50 360 Z" 
+          fill="none" stroke="#0080ff" stroke-width="2"/>
+  </g>
+  
+  <!-- Decorative dots with glow -->
+  <circle cx="300" cy="200" r="3" fill="#ff0040" filter="url(#glow)"/>
+  <circle cx="820" cy="200" r="3" fill="#0080ff" filter="url(#glow)"/>
+</svg>

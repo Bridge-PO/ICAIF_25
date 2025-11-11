@@ -1,0 +1,132 @@
+<svg width="800" height="800" viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="mainGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff0040;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#8000ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0080ff;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="redGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff0040;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ff0040;stop-opacity:0.4" />
+    </linearGradient>
+    
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="6" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <filter id="grain">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="4" />
+      <feColorMatrix type="saturate" values="0"/>
+      <feBlend in="SourceGraphic" mode="multiply" />
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="800" fill="#000000"/>
+  
+  <!-- Grain texture -->
+  <rect width="800" height="800" fill="#ffffff" opacity="0.03" filter="url(#grain)"/>
+  
+  <!-- Grid background -->
+  <g opacity="0.08">
+    <line x1="0" y1="200" x2="800" y2="200" stroke="#ffffff" stroke-width="1"/>
+    <line x1="0" y1="400" x2="800" y2="400" stroke="#ffffff" stroke-width="1"/>
+    <line x1="0" y1="600" x2="800" y2="600" stroke="#ffffff" stroke-width="1"/>
+    <line x1="200" y1="0" x2="200" y2="800" stroke="#ffffff" stroke-width="1"/>
+    <line x1="400" y1="0" x2="400" y2="800" stroke="#ffffff" stroke-width="1"/>
+    <line x1="600" y1="0" x2="600" y2="800" stroke="#ffffff" stroke-width="1"/>
+  </g>
+  
+  <!-- Outer angular frame -->
+  <g opacity="0.3">
+    <path d="M 100 100 L 700 100 L 680 120 L 120 120 Z" 
+          fill="none" stroke="#ff0040" stroke-width="2"/>
+    <path d="M 700 100 L 700 700 L 680 680 L 680 120 Z" 
+          fill="none" stroke="#8000ff" stroke-width="2"/>
+    <path d="M 700 700 L 100 700 L 120 680 L 680 680 Z" 
+          fill="none" stroke="#0080ff" stroke-width="2"/>
+    <path d="M 100 700 L 100 100 L 120 120 L 120 680 Z" 
+          fill="none" stroke="#8000ff" stroke-width="2"/>
+  </g>
+  
+  <!-- Top badge style element -->
+  <g>
+    <path d="M 250 140 L 550 140 L 540 165 L 250 165 Z" 
+          fill="#ff0040" opacity="0.9"/>
+    <text x="400" y="158" font-family="'Oswald', Arial, sans-serif" 
+          font-size="14" fill="#ffffff" font-weight="700" 
+          letter-spacing="4" text-anchor="middle">
+      ICAIF 2025
+    </text>
+  </g>
+  
+  <!-- Main DFL text -->
+  <g>
+    <!-- Solid white text -->
+    <text x="400" y="430" font-family="'Bebas Neue', Impact, Arial Black, sans-serif" 
+          font-size="220" fill="#ffffff" text-anchor="middle" 
+          font-weight="900" letter-spacing="30">
+      DFL
+    </text>
+    
+    <!-- Gradient outline with glow -->
+    <text x="400" y="430" font-family="'Bebas Neue', Impact, Arial Black, sans-serif" 
+          font-size="220" fill="none" stroke="url(#mainGrad)" stroke-width="4" 
+          text-anchor="middle" font-weight="900" letter-spacing="30" 
+          filter="url(#glow)"/>
+  </g>
+  
+  <!-- Divider line -->
+  <g>
+    <line x1="250" y1="480" x2="550" y2="480" stroke="url(#redGrad)" stroke-width="3"/>
+    <path d="M 250 480 L 270 480 L 268 485 L 250 485 Z" fill="#ff0040"/>
+  </g>
+  
+  <!-- Bottom text -->
+  <g>
+    <text x="400" y="530" font-family="'Oswald', Arial, sans-serif" 
+          font-size="28" fill="#888888" text-anchor="middle" 
+          font-weight="300" letter-spacing="10">
+      DECISION-FOCUSED
+    </text>
+    
+    <text x="400" y="570" font-family="'Oswald', Arial, sans-serif" 
+          font-size="28" fill="#888888" text-anchor="middle" 
+          font-weight="300" letter-spacing="10">
+      LEARNING
+    </text>
+  </g>
+  
+  <!-- Bottom badge -->
+  <g>
+    <path d="M 250 620 L 550 620 L 540 650 L 250 650 Z" 
+          fill="#0a0a0a" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+    <rect x="250" y="620" width="300" height="2" fill="#0080ff"/>
+    <text x="400" y="642" font-family="'Oswald', Arial, sans-serif" 
+          font-size="12" fill="#666666" text-anchor="middle" 
+          font-weight="300" letter-spacing="4">
+      FINANCIAL OPTIMIZATION
+    </text>
+  </g>
+  
+  <!-- Corner accents -->
+  <g opacity="0.8">
+    <circle cx="150" cy="150" r="4" fill="#ff0040" filter="url(#glow)"/>
+    <circle cx="650" cy="150" r="4" fill="#ff0040" filter="url(#glow)"/>
+    <circle cx="650" cy="650" r="4" fill="#0080ff" filter="url(#glow)"/>
+    <circle cx="150" cy="650" r="4" fill="#0080ff" filter="url(#glow)"/>
+  </g>
+  
+  <!-- Small angular decorations -->
+  <g opacity="0.5">
+    <path d="M 180 350 L 220 350 L 218 355 L 180 355 Z" 
+          fill="none" stroke="#8000ff" stroke-width="1.5"/>
+    <path d="M 580 450 L 620 450 L 618 455 L 580 455 Z" 
+          fill="none" stroke="#8000ff" stroke-width="1.5"/>
+  </g>
+</svg>

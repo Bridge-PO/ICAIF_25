@@ -1,0 +1,168 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="mainGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff0040;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#8000ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0080ff;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="bgGrad" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" style="stop-color:#8000ff;stop-opacity:0.1" />
+      <stop offset="100%" style="stop-color:transparent;stop-opacity:0" />
+    </linearGradient>
+    
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="5" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <filter id="grain">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="4" />
+      <feColorMatrix type="saturate" values="0"/>
+      <feBlend in="SourceGraphic" mode="multiply" />
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="630" fill="#000000"/>
+  
+  <!-- Radial gradient background -->
+  <ellipse cx="600" cy="315" rx="600" ry="350" fill="url(#bgGrad)"/>
+  
+  <!-- Grain texture -->
+  <rect width="1200" height="630" fill="#ffffff" opacity="0.05" filter="url(#grain)"/>
+  
+  <!-- Large background DFL text -->
+  <text x="600" y="370" font-family="'Bebas Neue', Impact, Arial Black, sans-serif" 
+        font-size="400" fill="rgba(255,255,255,0.04)" text-anchor="middle" 
+        font-weight="900" letter-spacing="-10">
+    DFL
+  </text>
+  
+  <!-- Top badge -->
+  <g>
+    <path d="M 80 50 L 350 50 L 340 75 L 80 75 Z" 
+          fill="#ff0040" opacity="1"/>
+    <text x="215" y="68" font-family="'Oswald', Arial, sans-serif" 
+          font-size="14" fill="#ffffff" font-weight="700" 
+          letter-spacing="4" text-anchor="middle">
+      ICAIF 2025 TUTORIAL
+    </text>
+  </g>
+  
+  <!-- Main title: DECISION-FOCUSED LEARNING -->
+  <g>
+    <text x="600" y="200" font-family="'Bebas Neue', Impact, Arial Black, sans-serif" 
+          font-size="90" fill="#ffffff" text-anchor="middle" 
+          font-weight="900" letter-spacing="6">
+      DECISION-FOCUSED LEARNING
+    </text>
+  </g>
+  
+  <!-- Subtitle line -->
+  <g>
+    <text x="600" y="280" font-family="'Bebas Neue', Impact, Arial Black, sans-serif" 
+          font-size="65" fill="#ffffff" text-anchor="middle" 
+          font-weight="900" letter-spacing="2">
+      <tspan fill="#ffffff">IN </tspan>
+      <tspan fill="transparent" stroke="#ffffff" stroke-width="2">FINANCIAL OPTIMIZATION</tspan>
+      <tspan fill="#ff0040">.</tspan>
+    </text>
+    
+    <!-- Gradient outline effect -->
+    <text x="600" y="280" font-family="'Bebas Neue', Impact, Arial Black, sans-serif" 
+          font-size="65" fill="none" stroke="url(#mainGrad)" stroke-width="2"
+          text-anchor="middle" font-weight="900" letter-spacing="2" 
+          opacity="0.8" filter="url(#glow)">
+      <tspan>IN </tspan>
+      <tspan>FINANCIAL OPTIMIZATION</tspan>
+      <tspan>.</tspan>
+    </text>
+  </g>
+  
+  <!-- Divider line -->
+  <line x1="200" y1="325" x2="480" y2="325" stroke="url(#mainGrad)" stroke-width="2"/>
+  
+  <!-- Subtitle text -->
+  <text x="600" y="360" font-family="'Oswald', Arial, sans-serif" 
+        font-size="20" fill="#888888" text-anchor="middle" 
+        font-weight="300" letter-spacing="10">
+    BRIDGING PREDICTION AND OPTIMIZATION
+  </text>
+  
+  <!-- Info boxes at bottom -->
+  <g>
+    <!-- Date box -->
+    <g transform="translate(150, 460)">
+      <path d="M 0 0 L 220 0 L 212 55 L 0 55 Z" 
+            fill="#0a0a0a" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+      <rect x="0" y="0" width="220" height="3" fill="#ff0040"/>
+      <text x="110" y="24" font-family="'Bebas Neue', Arial Black, sans-serif" 
+            font-size="20" fill="#ff0040" text-anchor="middle" 
+            font-weight="900" letter-spacing="2">
+        NOV 15
+      </text>
+      <text x="110" y="42" font-family="'Oswald', Arial, sans-serif" 
+            font-size="11" fill="#888888" text-anchor="middle" 
+            font-weight="300" letter-spacing="2">
+        SATURDAY, 2025
+      </text>
+    </g>
+    
+    <!-- Duration box -->
+    <g transform="translate(410, 460)">
+      <path d="M 0 0 L 220 0 L 212 55 L 0 55 Z" 
+            fill="#0a0a0a" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+      <rect x="0" y="0" width="220" height="3" fill="#8000ff"/>
+      <text x="110" y="24" font-family="'Bebas Neue', Arial Black, sans-serif" 
+            font-size="20" fill="#8000ff" text-anchor="middle" 
+            font-weight="900" letter-spacing="2">
+        3.5 HRS
+      </text>
+      <text x="110" y="42" font-family="'Oswald', Arial, sans-serif" 
+            font-size="11" fill="#888888" text-anchor="middle" 
+            font-weight="300" letter-spacing="2">
+        DURATION
+      </text>
+    </g>
+    
+    <!-- Location box -->
+    <g transform="translate(670, 460)">
+      <path d="M 0 0 L 220 0 L 212 55 L 0 55 Z" 
+            fill="#0a0a0a" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+      <rect x="0" y="0" width="220" height="3" fill="#0080ff"/>
+      <text x="110" y="24" font-family="'Bebas Neue', Arial Black, sans-serif" 
+            font-size="20" fill="#0080ff" text-anchor="middle" 
+            font-weight="900" letter-spacing="2">
+        IN-PERSON
+      </text>
+      <text x="110" y="42" font-family="'Oswald', Arial, sans-serif" 
+            font-size="11" fill="#888888" text-anchor="middle" 
+            font-weight="300" letter-spacing="2">
+        FORMAT
+      </text>
+    </g>
+  </g>
+  
+  <!-- Bottom organization info -->
+  <text x="600" y="575" font-family="'Oswald', Arial, sans-serif" 
+        font-size="14" fill="#666666" text-anchor="middle" 
+        font-weight="300" letter-spacing="4">
+    UNIST • KAIST
+  </text>
+  
+  <!-- Decorative corner elements -->
+  <g opacity="0.4">
+    <path d="M 60 120 L 120 120 L 116 128 L 60 128 Z" 
+          fill="none" stroke="#ff0040" stroke-width="2"/>
+    <path d="M 1080 120 L 1140 120 L 1136 128 L 1080 128 Z" 
+          fill="none" stroke="#0080ff" stroke-width="2"/>
+  </g>
+  
+  <!-- Corner accent dots -->
+  <circle cx="80" cy="80" r="3" fill="#ff0040" filter="url(#glow)"/>
+  <circle cx="1120" cy="80" r="3" fill="#0080ff" filter="url(#glow)"/>
+</svg>
