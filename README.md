@@ -11,7 +11,7 @@
 
 **Official repository for the Decision-Focused Learning tutorial at [ICAIF 2025](https://icaif25.org/)**
 
-[🌐 Website](https://bridge-po.github.io/) • [📖 Documentation](#) • [💻 Notebooks](#notebooks) • [👥 Organizers](#organizers)
+[🌐 Website](https://bridge-po.github.io/) • [📖 Documentation](#) • [💻 Notebooks](https://github.com/Bridge-PO/ICAIF_25/tree/main/Code)
 
 </div>
 
@@ -44,6 +44,30 @@ This tutorial introduces **Decision-Focused Learning (DFL)** and its application
 | **4** | DFL in Partial Index Tracking | Hyunglip Bae (KAIST) |
 | **5** | Closing Remarks & Future Directions | Yongjae Lee (UNIST) |
 
+### Session 1: Introduction & Motivation
+- Overview of DFL vs. PFL paradigms
+- Motivation in financial applications
+- Why prediction accuracy ≠ better decisions
+
+### Session 2: Background in Decision-Focused Learning
+- PFL vs DFL pipeline comparison
+- Theoretical considerations and challenges
+- **[Hands-on Exercise]** Building a simple DFL model with PyTorch
+
+### Session 3: DFL in Mean-Variance Optimization
+- Markowitz framework review
+- **[Hands-on Exercise]** Complete DFL pipeline implementation
+- PFL vs DFL performance comparison with real market data
+
+### Session 4: DFL in Partial Index Tracking
+- Partial index tracking problem formulation
+- Semi-definite relaxation techniques
+- **[Hands-on Exercise]** DFL for partial index tracking with CvxpyLayer
+
+### Session 5: Closing Remarks & Future Directions
+- Open research challenges
+- Q&A with all organizers
+
 ## 🔬 Key Concepts
 
 ### Prediction-Focused Learning (PFL)
@@ -60,16 +84,6 @@ End-to-end approach:
 3. Gradients flow from decision loss back through optimization to predictions
 
 **Advantage:** Learns predictions that lead to better decisions, not just accurate predictions.
-
-## 👥 Organizers
-
-<div align="center">
-
-| | | | | |
-|:---:|:---:|:---:|:---:|:---:|
-| <img src="https://via.placeholder.com/120" width="120" style="border-radius: 10px;"><br/>**Yongjae Lee**<br/>UNIST<br/>[![LinkedIn](https://img.shields.io/badge/-LinkedIn-0077B5?style=flat&logo=linkedin)](https://www.linkedin.com/in/yongjae-lee-548982107) | <img src="https://via.placeholder.com/120" width="120" style="border-radius: 10px;"><br/>**Woo Chang Kim**<br/>KAIST<br/>[![LinkedIn](https://img.shields.io/badge/-LinkedIn-0077B5?style=flat&logo=linkedin)](https://www.linkedin.com/in/woo-chang-kim-a7774810) | <img src="https://via.placeholder.com/120" width="120" style="border-radius: 10px;"><br/>**Junhyeong Lee**<br/>UNIST<br/>[![LinkedIn](https://img.shields.io/badge/-LinkedIn-0077B5?style=flat&logo=linkedin)](https://www.linkedin.com/in/junhyeong-lee-137b56202) | <img src="https://via.placeholder.com/120" width="120" style="border-radius: 10px;"><br/>**Hyunglip Bae**<br/>KAIST<br/>[![LinkedIn](https://img.shields.io/badge/-LinkedIn-0077B5?style=flat&logo=linkedin)](https://www.linkedin.com/in/hyunglip-bae-85981b278) | <img src="https://via.placeholder.com/120" width="120" style="border-radius: 10px;"><br/>**Haeun Jeon**<br/>KAIST<br/>[![LinkedIn](https://img.shields.io/badge/-LinkedIn-0077B5?style=flat&logo=linkedin)](https://www.linkedin.com/in/haeun-jeon-08a4a3292) |
-
-</div>
 
 ## 📧 Contact
 
