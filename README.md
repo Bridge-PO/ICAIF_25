@@ -44,30 +44,6 @@ This tutorial introduces **Decision-Focused Learning (DFL)** and its application
 | **4** | DFL in Partial Index Tracking | Hyunglip Bae (KAIST) |
 | **5** | Closing Remarks & Future Directions | Yongjae Lee (UNIST) |
 
-### Session 1: Introduction & Motivation
-- Overview of DFL vs. PFL paradigms
-- Motivation in financial applications
-- Why prediction accuracy ≠ better decisions
-
-### Session 2: Background in Decision-Focused Learning
-- PFL vs DFL pipeline comparison
-- Theoretical considerations and challenges
-- **[Hands-on Exercise]** Building a simple DFL model with PyTorch
-
-### Session 3: DFL in Mean-Variance Optimization
-- Markowitz framework review
-- **[Hands-on Exercise]** Complete DFL pipeline implementation
-- PFL vs DFL performance comparison with real market data
-
-### Session 4: DFL in Partial Index Tracking
-- Partial index tracking problem formulation
-- Semi-definite relaxation techniques
-- **[Hands-on Exercise]** DFL for partial index tracking with CvxpyLayer
-
-### Session 5: Closing Remarks & Future Directions
-- Open research challenges
-- Q&A with all organizers
-
 ## Key Concepts
 
 ### Prediction-Focused Learning (PFL)
