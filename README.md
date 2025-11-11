@@ -11,22 +11,22 @@
 
 **Official repository for the Decision-Focused Learning tutorial at [ICAIF 2025](https://icaif25.org/)**
 
-[🌐 Website](https://bridge-po.github.io/) • [📖 Documentation](#) • [💻 Notebooks](https://github.com/Bridge-PO/ICAIF_25/tree/main/Code)
+[Website](https://bridge-po.github.io/) • [Documentation](#) • [Notebooks](https://github.com/Bridge-PO/ICAIF_25/tree/main/Code)
 
 </div>
 
 ---
 
-## 📋 Overview
+## Overview
 
 This tutorial introduces **Decision-Focused Learning (DFL)** and its applications to financial optimization problems. Unlike traditional prediction-focused approaches, DFL directly aligns machine learning training objectives with the quality of downstream decisions, leading to superior performance in portfolio optimization and financial decision-making tasks.
 
-**📅 Date:** Saturday, November 15, 2025  
-**⏰ Time:** 2:00 PM - 5:30 PM SGT  
-**📍 Location:** Singapore  
-**🎯 Duration:** 3.5 hours  
+**Date:** Saturday, November 15, 2025  
+**Time:** 2:00 PM - 5:30 PM SGT  
+**Location:** Singapore  
+**Duration:** 3.5 hours  
 
-## 🎓 What You'll Learn
+## What You'll Learn
 
 - Fundamental differences between Prediction-Focused Learning (PFL) and Decision-Focused Learning (DFL)
 - How to implement end-to-end differentiable optimization with PyTorch and cvxpylayers
@@ -34,7 +34,7 @@ This tutorial introduces **Decision-Focused Learning (DFL)** and its application
 - Techniques for partial index tracking with DFL
 - Practical hands-on experience with real financial datasets
 
-## 📚 Tutorial Schedule
+## Tutorial Schedule
 
 | Session | Title | Speaker |
 |---------|-------|---------|
@@ -44,7 +44,31 @@ This tutorial introduces **Decision-Focused Learning (DFL)** and its application
 | **4** | DFL in Partial Index Tracking | Hyunglip Bae (KAIST) |
 | **5** | Closing Remarks & Future Directions | Yongjae Lee (UNIST) |
 
-## 🔬 Key Concepts
+### Session 1: Introduction & Motivation
+- Overview of DFL vs. PFL paradigms
+- Motivation in financial applications
+- Why prediction accuracy ≠ better decisions
+
+### Session 2: Background in Decision-Focused Learning
+- PFL vs DFL pipeline comparison
+- Theoretical considerations and challenges
+- **[Hands-on Exercise]** Building a simple DFL model with PyTorch
+
+### Session 3: DFL in Mean-Variance Optimization
+- Markowitz framework review
+- **[Hands-on Exercise]** Complete DFL pipeline implementation
+- PFL vs DFL performance comparison with real market data
+
+### Session 4: DFL in Partial Index Tracking
+- Partial index tracking problem formulation
+- Semi-definite relaxation techniques
+- **[Hands-on Exercise]** DFL for partial index tracking with CvxpyLayer
+
+### Session 5: Closing Remarks & Future Directions
+- Open research challenges
+- Q&A with all organizers
+
+## Key Concepts
 
 ### Prediction-Focused Learning (PFL)
 Traditional two-stage approach:
@@ -61,23 +85,23 @@ End-to-end approach:
 
 **Advantage:** Learns predictions that lead to better decisions, not just accurate predictions.
 
-## 📧 Contact
+## Contact
 
-For questions or issues, please:
+For questions or issues:
 - Open an issue on GitHub
 - Email: jun.lee@unist.ac.kr
 
-## 📜 License
+## License
 
-This project is licensed under the MIT License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - ICAIF 2025 organizing committee
 - UNIST and KAIST research teams
 - Open source community for PyTorch, cvxpy, and cvxpylayers
 
-## 🔗 Resources
+## Resources
 
 - **Tutorial Website:** [https://bridge-po.github.io/](https://bridge-po.github.io/)
 - **ICAIF 2025:** [https://icaif25.org/](https://icaif25.org/)
@@ -88,7 +112,7 @@ This project is licensed under the MIT License
 
 <div align="center">
 
-**⭐ If you find this tutorial helpful, please star this repository!**
+⭐ If you find this tutorial helpful, please star this repository!
 
 <img src="assets/logo-square-website-style.svg" alt="DFL" width="120"/>
 
