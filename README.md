@@ -3,7 +3,7 @@
   <br/>
   <br/>
 
-# Decision-Focused Learning in Financial Optimization
+# Bridging Prediction and Optimization: Decision-Focused Learning in Financial Optimization
 
 [![ICAIF 2025](https://img.shields.io/badge/ICAIF-2025-red)](https://icaif25.org/)
 [![Tutorial](https://img.shields.io/badge/Tutorial-November%2015-blue)](https://bridge-po.github.io/)
