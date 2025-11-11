@@ -1,4 +1,3 @@
-# Bridging Prediction and Optimization: Decision-Focused Learning in Financial Optimization
 <div align="center">
   <img src="assets/logo-website-style.svg" alt="DFL Logo" width="800"/>
   <br/>
@@ -37,13 +36,13 @@ This tutorial introduces **Decision-Focused Learning (DFL)** and its application
 
 ## 📚 Tutorial Schedule
 
-| Session | Title | Speaker | Duration |
-|---------|-------|---------|----------|
-| **1** | Introduction & Motivation | Yongjae Lee (UNIST) | 20 min |
-| **2** | Background in Decision-Focused Learning | Haeun Jeon (KAIST) | 30 min |
-| **3** | DFL in Mean-Variance Optimization | Junhyeong Lee (UNIST) | 30 min |
-| **4** | DFL in Partial Index Tracking | Hyunglip Bae (KAIST) | 30 min |
-| **5** | Closing Remarks & Future Directions | Yongjae Lee (UNIST) | 10 min |
+| Session | Title | Speaker |
+|---------|-------|---------|
+| **1** | Introduction & Motivation | Yongjae Lee (UNIST) |
+| **2** | Background in Decision-Focused Learning | Haeun Jeon (KAIST) |
+| **3** | DFL in Mean-Variance Optimization | Junhyeong Lee (UNIST) |
+| **4** | DFL in Partial Index Tracking | Hyunglip Bae (KAIST) |
+| **5** | Closing Remarks & Future Directions | Yongjae Lee (UNIST) |
 
 ### Session 1: Introduction & Motivation
 - Overview of DFL vs. PFL paradigms
@@ -69,133 +68,6 @@ This tutorial introduces **Decision-Focused Learning (DFL)** and its application
 - Open research challenges
 - Q&A with all organizers
 
-## 🛠️ Prerequisites
-
-- **Programming:** Python 3.8+
-- **Knowledge:**
-  - Basic machine learning concepts
-  - Familiarity with PyTorch
-  - Optimization theory (helpful but not required)
-
-## 📦 Installation
-
-### 1. Clone the Repository
-```bash
-git clone https://github.com/your-username/dfl-icaif2025.git
-cd dfl-icaif2025
-```
-
-### 2. Create a Virtual Environment
-```bash
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-```
-
-### 3. Install Dependencies
-```bash
-pip install -r requirements.txt
-```
-
-### Required Packages
-```
-torch>=2.0.0
-cvxpy>=1.4.0
-cvxpylayers>=0.1.6
-numpy>=1.24.0
-pandas>=2.0.0
-matplotlib>=3.7.0
-jupyter>=1.0.0
-yfinance>=0.2.0
-```
-
-## 🚀 Quick Start
-
-### Running the Notebooks
-
-Navigate to the `notebooks/` directory and start Jupyter:
-
-```bash
-cd notebooks
-jupyter notebook
-```
-
-The tutorial notebooks are organized as follows:
-
-```
-notebooks/
-├── 01_introduction_to_dfl.ipynb
-├── 02_dfl_basics_pytorch.ipynb
-├── 03_mean_variance_optimization.ipynb
-├── 04_partial_index_tracking.ipynb
-└── 05_advanced_topics.ipynb
-```
-
-### Running the Examples
-
-```bash
-# Example 1: Simple DFL Model
-python examples/simple_dfl.py
-
-# Example 2: Mean-Variance Optimization
-python examples/mean_variance.py
-
-# Example 3: Partial Index Tracking
-python examples/partial_index_tracking.py
-```
-
-## 📁 Repository Structure
-
-```
-dfl-icaif2025/
-├── README.md
-├── requirements.txt
-├── LICENSE
-├── assets/
-│   ├── logo-website-style.svg
-│   ├── logo-square-website-style.svg
-│   └── social-preview.svg
-├── notebooks/                 # Jupyter notebooks for tutorial
-│   ├── 01_introduction_to_dfl.ipynb
-│   ├── 02_dfl_basics_pytorch.ipynb
-│   ├── 03_mean_variance_optimization.ipynb
-│   ├── 04_partial_index_tracking.ipynb
-│   └── 05_advanced_topics.ipynb
-├── src/                       # Source code
-│   ├── __init__.py
-│   ├── models/               # DFL models
-│   │   ├── __init__.py
-│   │   ├── dfl_base.py
-│   │   └── neural_nets.py
-│   ├── optimization/         # Optimization layers
-│   │   ├── __init__.py
-│   │   ├── markowitz.py
-│   │   └── index_tracking.py
-│   └── utils/                # Utility functions
-│       ├── __init__.py
-│       ├── data_loader.py
-│       └── metrics.py
-├── examples/                  # Standalone examples
-│   ├── simple_dfl.py
-│   ├── mean_variance.py
-│   └── partial_index_tracking.py
-├── data/                      # Data files (if needed)
-│   └── README.md
-├── slides/                    # Tutorial slides
-│   └── dfl_tutorial.pdf
-└── tests/                     # Unit tests
-    └── test_models.py
-```
-
-## 📊 Datasets
-
-The tutorial uses publicly available financial data:
-
-- **S&P 100 stocks** - Historical price and return data
-- **Market indices** - Benchmark performance data
-- **Financial statements** - Company fundamentals (if needed)
-
-Data will be automatically downloaded using `yfinance` when running the notebooks.
-
 ## 🔬 Key Concepts
 
 ### Prediction-Focused Learning (PFL)
@@ -212,24 +84,6 @@ End-to-end approach:
 3. Gradients flow from decision loss back through optimization to predictions
 
 **Advantage:** Learns predictions that lead to better decisions, not just accurate predictions.
-
-## 📖 References
-
-If you use this code or find the tutorial helpful, please cite:
-
-```bibtex
-@inproceedings{lee2025dfl,
-  title={Decision-Focused Learning in Financial Optimization},
-  author={Lee, Yongjae and Kim, Woo Chang and Lee, Junhyeong and Bae, Hyunglip and Jeon, Haeun},
-  booktitle={Proceedings of the 6th ACM International Conference on AI in Finance},
-  year={2025}
-}
-```
-
-### Related Papers
-- Wilder, B., Dilkina, B., & Tambe, M. (2019). Melding the data-decisions pipeline: Decision-focused learning for combinatorial optimization. AAAI.
-- Elmachtoub, A. N., & Grigas, P. (2022). Smart "predict, then optimize". Management Science.
-- Donti, P., Amos, B., & Kolter, J. Z. (2017). Task-based end-to-end model learning in stochastic optimization. NeurIPS.
 
 ## 👥 Organizers
 
